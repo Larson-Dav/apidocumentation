@@ -1,0 +1,46 @@
+import { Guides } from '@/components/Guides'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+import { Blogspot } from '@/components/blogspot'
+
+export const metadata = {
+  title: 'Docpure',
+  description:
+    'Learn everything there is to know about the world of API and integrate Apis into your product.',
+}
+
+export const sections = [
+  { title: 'Guides', id: 'guides' },
+  { title: 'Resources', id: 'resources' },
+]
+
+
+
+# API Documentation
+
+Use the APIs to access contacts, conversations, group messages, and more and seamlessly integrate your product into the workflows of dozens of devoted APIs users. {{ className: 'lead' }}
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button href="/quickstart" arrow="right">
+    <>Quickstart</>
+  </Button>
+  <Button href="/sdks" variant="outline">
+    <>Explore mores</>
+  </Button>
+</div>
+
+
+
+## Getting started {{ anchor: false }}
+
+To get started, create a new application in your developer settings, then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our integrations directory to reach the Protocol community. {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button href="/sdks" variant="text" arrow="right">
+    <>Get your API key</>
+  </Button>
+</div>
+
+<Guides />
+
+<Resources />
